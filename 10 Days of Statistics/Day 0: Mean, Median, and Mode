@@ -1,0 +1,15 @@
+# Read input 
+n = input()
+array = input()
+
+# Imort Package
+import pandas as pd 
+
+# Mean 
+print (pd.Series([int(i) for i in array.split()]).mean())
+
+# Median
+print (pd.Series([int(i) for i in array.split()]).median())
+
+# Mode
+print (pd.Series([int(i) for i in array.split()]).mode()[0])
